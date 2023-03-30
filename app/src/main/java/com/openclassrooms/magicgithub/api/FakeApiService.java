@@ -25,7 +25,10 @@ public class FakeApiService implements ApiService {
     @Override
     public void generateRandomUser() {
 
+
         users.add(User.random());
+        
+
     }
 
     /**
@@ -34,6 +37,9 @@ public class FakeApiService implements ApiService {
     @Override
     public void deleteUser(User user) {
 
+
         users.remove(users.indexOf(user));
+        
+       
     }
 }
